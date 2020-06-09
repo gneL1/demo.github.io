@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<p>11111111111111111111111111111111111
+<span style="color:#e74c3c">2222222222222222212
+</span>
+</p>
+<hr />
+<p><button onclick="callFlutter()">callFlutter</button></p>
+<p id = "p1" style="visibility:hidden;">
+Flutter 调用了JS.
+Flutter 调用了JS.
+Flutter 调用了JS.
+</p>
+<p><img alt="" src="http://10.0.2.2:8000/main/home_bg.png"  /></p>
+<script>
+function callFlutter(){
+//document.location跳转到对应页面
+document.location = "https://www.baidu.com/";
+//document.location = "https://cn.bing.com/";
+//Toast.postMessage("JS调用了Flutter");
+//Toast.postMessage([1,2,);
+}
+
+function callJS(message){
+  document.getElementById("p1").style.visibility = message;
+}
+</script>
+</html>
